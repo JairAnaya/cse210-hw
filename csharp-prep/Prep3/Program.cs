@@ -7,7 +7,7 @@ class Program
         Random randomGenerator = new Random();
         int number = randomGenerator.Next(1, 101);
         int guess = 0;
-        Console.WriteLine($"What is the magic number? {number}");
+        Console.WriteLine($"The magic number was selected randomly");
         while (!(guess == number))
         {
             Console.Write("What is your guess? ");
