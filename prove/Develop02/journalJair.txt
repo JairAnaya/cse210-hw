@@ -1,0 +1,4 @@
+27/09/2024,What did I learned today?,I learned to program classes with C#
+27/09/2024,Who was the most interesting person I interacted with today?,My wife Dora.
+27/09/2024,What did I learned today?,I learned to simulate with Simulink.
+27/09/2024,Who was the most interesting person I interacted with today?,My daughter Dorita.
