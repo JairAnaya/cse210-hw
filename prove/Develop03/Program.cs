@@ -52,7 +52,7 @@ class Program
         while (true)
         {
             Console.Clear();
-            Console.WriteLine($"{selectedReference.GetDisplayText()}\n");
+            Console.Write($"{selectedReference.GetDisplayText()} ");
             Console.WriteLine(selectedScripture.GetDisplayText());
 
             Console.WriteLine("\nPress Enter to hide more words or type 'quit' to exit.");
