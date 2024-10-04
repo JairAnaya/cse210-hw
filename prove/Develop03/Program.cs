@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-
+// I added two more scriptures so the user can choose from the three scriptures and then memorize it
 class Program
 {
     static void Main(string[] args)
