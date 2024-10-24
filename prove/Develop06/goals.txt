@@ -1,0 +1,5 @@
+815
+SimpleGoal|Study the scriptures|Study at least 20 minutes|10|True
+EternalGoal|Pray daily|Make at least three personal prayers every day|15
+ChecklistGoal|Attend the temple|Attend and perform any ordinance|550|5|500|5
+SimpleGoal|Bare testimony|Be ready to bare my testimony when needed|50|True

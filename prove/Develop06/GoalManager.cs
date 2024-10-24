@@ -17,7 +17,6 @@ public class GoalManager
         bool exit = false;
         while (!exit)
         {
-            Console.WriteLine("\n");
             DisplayPlayerInfo();
             Console.WriteLine("Choose an option:");
             Console.WriteLine("1. Create a new goal");
@@ -59,7 +58,7 @@ public class GoalManager
 
     public void DisplayPlayerInfo()
     {
-        Console.WriteLine($"You have {_score} points\n");
+        Console.WriteLine($"\nYou have {_score} points\n");
     }
 
     public void ListGoalDetails()
@@ -75,11 +74,11 @@ public class GoalManager
 
     public void CreateGoal()
     {
-        Console.WriteLine("Type of goals:");
+        Console.WriteLine("\nType of goals:");
         Console.WriteLine("1. Simple goal");
         Console.WriteLine("2. Eternal goal");
         Console.WriteLine("3. Checklist goal");
-        Console.Write("\nWhat type of goal do you want to create?");
+        Console.Write("What type of goal do you want to create? ");
         string choice = Console.ReadLine();
         Console.Write("Enter goal name: ");
         string name = Console.ReadLine();
@@ -127,22 +126,7 @@ public class GoalManager
 
             if (selectedGoal is SimpleGoal)
             {
-                Console.WriteLine("You've completed a Simple Goal. Do you want to create a new goal? (yes/no)");
-                string response = Console.ReadLine().ToLower();
-
-                if (response == "no")
-                {
-                    DeductPoints();
-                }
-                else
-                {
-                    CreateGoal();
-                }
-            }
-
-            if (selectedGoal is ChecklistGoal)
-            {
-                Console.WriteLine("You've completed a Checklist Goal. Do you want to create a new goal? (yes/no)");
+                Console.Write("You've completed a Simple Goal. Do you want to create a new goal? (yes/no) ");
                 string response = Console.ReadLine().ToLower();
 
                 if (response == "no")
@@ -187,7 +171,7 @@ public class GoalManager
             }
         }
 
-        Console.WriteLine($"Goals saved to {fileName}");
+        Console.WriteLine($"Goals saved to '{fileName}'");
     }
 
     public void LoadGoals()
